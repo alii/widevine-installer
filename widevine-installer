@@ -85,10 +85,7 @@ echo "for interoperability purposes, to make it function on vanilla"
 echo "ARM64 systems (instead of just ChromeOS). The CDM software"
 echo "itself will not be modified in any way."
 echo
-echo "Widevine version to be installed: $WIDEVINE_VERSION"
-echo
-echo "Press enter to proceed, or Ctrl-C to cancel."
-read dummy
+echo "Widevine version to be installed: $WIDEVINE_VERSION"echo
 
 workdir="$(mktemp -d /tmp/widevine-installer.XXXXXXXX)"
 [ -z "$workdir" ] && exit 1 # sanity check
